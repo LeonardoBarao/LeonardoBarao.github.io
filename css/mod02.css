@@ -1,0 +1,83 @@
+.introgrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0px 10px;
+  gap: 40px;
+  align-items: center;
+}
+
+.introgrid p {
+  font-size: 1.7rem;
+  max-width: 30ch;
+}
+
+.introgrid h1 {
+  font-size: 4rem;
+  max-width: 15ch;
+  position: relative;
+}
+
+.introgrid h1::before {
+  content: "";
+  display: block;
+  background: url("/img/detalhe.svg") no-repeat center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  z-index: -1;
+}
+
+#imgperf {
+  max-width: 100%;
+  height: auto;
+}
+
+.xpgrid {
+  align-content: top;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  gap: 40px;
+  margin: 20px auto;
+}
+
+.xpgrid h2 {
+  font-size: 7rem;
+  max-width: 4ch;
+  word-break: break-all;
+  color: #797979;
+  margin: 0px;
+}
+
+.xplist {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  gap: 20px 0px;
+}
+
+.textoxp {
+  font-size: 1.7rem;
+  max-width: 40ch;
+  margin: 0px;
+}
+
+.xpbox {
+  position: relative;
+  background-color: #f7f7f7;
+  display: grid;
+  gap: 0px 5px;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 20px;
+  border-radius: 8px;
+}
+
+.xpbox p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}

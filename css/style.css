@@ -1,0 +1,295 @@
+@import "./mod01.css";
+@import "./mod02.css";
+
+.anospan {
+  width: 10ch;
+  text-align: end;
+  white-space: nowrap;
+  position: absolute;
+  left: -100px;
+  top: 20px;
+}
+
+.anospan::after {
+  content: "";
+  width: 5px;
+  height: 30px;
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  background-image: linear-gradient(to bottom, #aaff72, #226320);
+}
+
+.tagflex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.tagflex span {
+  height: fit-content;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.formacao {
+  background-color: #141414;
+  width: 100%;
+}
+
+.formgrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 100px 0px 0px 0px;
+}
+
+.formgrid h2 {
+  font-size: 7rem;
+  max-width: 4ch;
+  word-break: break-all;
+  color: black;
+  margin-block: 0px;
+}
+
+#textoformacao {
+  font-size: 1.5rem;
+  color: #c5c5c5;
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+.formgrid p strong {
+  color: white;
+}
+
+.cursoflex {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  margin: 30px 0px;
+}
+
+.cursobox {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.cursobox h3 {
+  position: relative;
+  color: #f7f7f7;
+  margin-top: 12px;
+  max-width: 15ch;
+}
+
+.textocima {
+  color: #c5c5c5;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.textobaixo {
+  font-size: 1.2rem;
+  color: #c5c5c5;
+  margin: 10px;
+}
+
+.cursobox h3::before {
+  content: "";
+  width: 5px;
+  height: 30px;
+  position: absolute;
+  top: -4px;
+  left: -25px;
+  background-image: linear-gradient(to bottom, #aaff72, #226320);
+}
+
+.formlist {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 50px;
+}
+
+.intensivosgrid {
+  display: grid;
+  padding: 0px;
+}
+
+.intensivosgrid h4 {
+  color: #c5c5c5;
+}
+
+.intensivosgrid p {
+  color: white;
+}
+
+.intensivosgrid img {
+  align-self: center;
+}
+
+.intensivobox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0px;
+  margin-bottom: 30px;
+}
+
+.intensivobox h4 {
+  grid-column: 1;
+}
+
+.intensivobox p {
+  grid-column: 1;
+  margin: 0.5rem 0px;
+}
+
+.intensivobox span {
+  text-align: end;
+  align-self: center;
+  color: #c5c5c5;
+}
+
+.idiomabox span {
+  color: #c5c5c5;
+}
+
+footer {
+  background-color: black;
+  padding: 50px;
+  color: white;
+  position: relative;
+}
+
+#gridcontatos::before {
+  content: "";
+  background: url(./img/detalhe.svg) no-repeat center;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -75px;
+}
+
+#gridcontatos {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#textocontatos p {
+  font-size: 1.3rem;
+  margin: 10px 0px;
+  color: #c5c5c5;
+}
+
+#divcontatos p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#instap {
+  text-decoration: underline;
+}
+
+#direitosreservados {
+  font-size: 0.8rem;
+  color: #8b8b8b;
+}
+
+@media (max-width: 1000px) {
+  .introgrid h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+  .xpgrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .xpgrid h2 {
+    color: black;
+    font-size: 3rem;
+    max-width: 30ch;
+  }
+  .textoxp {
+    font-size: 1.2rem;
+  }
+  .introgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .introgrid h1 {
+    font-size: 1.5rem;
+  }
+  .introgrid h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+  .formgrid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  .formgrid h2 {
+    color: #f7f7f7;
+    font-size: 3rem;
+    word-break: keep-all;
+  }
+  #textoformacao {
+    font-size: 1.25rem;
+  }
+  .formlist {
+    padding: 30px 0px;
+  }
+  .intensivosgrid img {
+    position: static;
+  }
+  #gridcontatos {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+  }
+  #divcontatos p {
+    font-size: 1.3rem;
+  }
+  .anospan {
+    position: initial;
+    text-align: left;
+    order: 1;
+    width: initial;
+    margin-bottom: 5px;
+  }
+  .anospan::after {
+    content: none;
+    width: 5px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    background-image: linear-gradient(to bottom, #aaff72, #226320);
+  }
+  .xpbox {
+    position: relative;
+  }
+  .xpbox::before {
+    content: "";
+    width: 5px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    background-image: linear-gradient(to bottom, #aaff72, #226320);
+  }
+}
