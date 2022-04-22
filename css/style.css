@@ -170,7 +170,7 @@ footer {
 
 #gridcontatos::before {
   content: "";
-  background: url(./img/detalhe.svg) no-repeat center;
+  background: url("/img/detalhe.svg") no-repeat center;
   width: 150px;
   height: 150px;
   position: absolute;
